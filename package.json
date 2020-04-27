@@ -40,5 +40,10 @@
     "@cypress/code-coverage": "3.5.3",
     "cypress": "4.4.1",
     "start-server-and-test": "1.11.0"
+  },
+  "nyc": {
+    "exclude": [
+      "src/serviceWorker.js"
+    ]
   }
 }
