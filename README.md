@@ -1,3 +1,4 @@
+# instrument-example ![check-code-coverage](https://img.shields.io/badge/code--coverage-75%-yellow)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ```shell
