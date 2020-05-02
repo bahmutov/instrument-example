@@ -1,0 +1,23 @@
+name: ci
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@v2
+
+      - name: Run Cypress tests 🧪
+        uses: cypress-io/github-action@v1
+        with:
+          start: npm start
+          wait-on: 'http://localhost:3000'
+
+      - name: Update code coverage badge 🥇
+        run: npx update-badge
+
+      # commit any changed files
+      # https://github.com/mikeal/publish-to-github-action
+      - uses: mikeal/publish-to-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
