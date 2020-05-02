@@ -1,5 +1,6 @@
 {
   "name": "instrument-example",
+  "description": "An example application used in my series of videos about Cypress and code coverage",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
