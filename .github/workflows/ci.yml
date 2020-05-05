@@ -23,6 +23,8 @@ jobs:
         if: github.event_name == 'pull_request'
         run: npx set-gh-status --check-against-readme
         env:
+          # show debug logs from "set-gh-status" script
+          DEBUG: check-code-coverage
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # if running on master branch, update the README code coverage badge
