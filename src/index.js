@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+/* istanbul ignore next */
 function unused() {
   console.log('never called!')
 }
