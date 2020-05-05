@@ -32,6 +32,8 @@ jobs:
         env:
           # show debug logs from "set-gh-status" script
           DEBUG: check-code-coverage
+          # set the SHA of the _merged_ commit so the status check goes to PR
+          GITHUB_SHA: ${{ github.event.after }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # if running on master branch, update the README code coverage badge
