@@ -14,14 +14,16 @@ jobs:
           start: npm start
           wait-on: 'http://localhost:3000'
 
+      # https://help.github.com/en/actions/reference/events-that-trigger-workflows#pull-request-event-pull_request
       - name: Set code coverage commit status 📫
-        if: github.event_name == 'pull_request' && github.event.base.ref == 'master'
+        if: github.event_name == 'pull_request'
         run: npx set-gh-status --check-against-readme
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      # https://help.github.com/en/actions/reference/events-that-trigger-workflows#push-event-push
       - name: Update code coverage badge 🥇
-        if: github.event_name == 'push' && github.event.ref == 'refs/heads/master'
+        if: github.event_name == 'push' && github.ref == 'master'
         run: npx update-badge
 
       # commit any changed files
