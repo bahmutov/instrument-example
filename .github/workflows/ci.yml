@@ -15,14 +15,14 @@ jobs:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         run: echo "$GITHUB_CONTEXT"
 
-      - name: Print GitHub variables
-        run: npx print-env GITHUB
-
       - name: Run Cypress tests 🧪
         uses: cypress-io/github-action@v1
         with:
           start: npm start
           wait-on: 'http://localhost:3000'
+
+      - name: Print GitHub variables
+        run: npx print-env GITHUB
 
       # in each pull request to master, compare current code coverage
       # against the code coverage badge in README file
