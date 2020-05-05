@@ -15,12 +15,13 @@ jobs:
           wait-on: 'http://localhost:3000'
 
       - name: Set code coverage commit status 📫
+        if: github.event_name == 'pull_request' && github.event.base.ref == 'master'
         run: npx set-gh-status --check-against-readme
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Update code coverage badge 🥇
-        if: github.event_name == 'pull_request' && github.event.base.ref == 'master'
+        if: github.event_name == 'push' && github.event.ref == 'refs/heads/master'
         run: npx update-badge
 
       # commit any changed files
