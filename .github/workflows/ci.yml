@@ -8,6 +8,13 @@ jobs:
       - name: Checkout 🛎
         uses: actions/checkout@v2
 
+      # just so you can see everything available in the event object
+      # https://help.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions
+      - name: Dump GitHub context 🖨
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
+
       - name: Run Cypress tests 🧪
         uses: cypress-io/github-action@v1
         with:
