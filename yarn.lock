@@ -3452,10 +3452,10 @@ chardet@^0.7.0:
   resolved "https://registry.yarnpkg.com/chardet/-/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
   integrity sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==
 
-check-code-coverage@1.8.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/check-code-coverage/-/check-code-coverage-1.8.0.tgz#5abcc4bf88c26fb798ebae31c84a077d58a1470a"
-  integrity sha512-60EBC+85thRGnz+w2gv99mESKktMEovDbCLMHYceGTBES2jsWJ9kq/J1/y/9wlhWpYeWCOMY+hpz7ogSYfJLwQ==
+check-code-coverage@1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/check-code-coverage/-/check-code-coverage-1.9.0.tgz#eaedd834bf3826a0278dfd1ddf441057b6031e6e"
+  integrity sha512-8+YUXl80wq2ftNNyt1PP7cNUjFP+yUC7KiBDQqRFYOZucXdz0BhuxHENFDstwgb242Yi+BNgjCYqdtpYnYTdHQ==
   dependencies:
     arg "4.1.3"
     debug "4.1.1"
@@ -4258,10 +4258,10 @@ cyclist@^1.0.1:
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
   integrity sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=
 
-cypress@4.4.1:
-  version "4.4.1"
-  resolved "https://registry.yarnpkg.com/cypress/-/cypress-4.4.1.tgz#f5aa1aa5f328f1299bff328103f7cbad89e80f29"
-  integrity sha512-LcskZ/PXRG9XTlEeeenKqz/KddT1x+7O7dqXsdKWPII01LxLNmNHIvHnlUqApchVbinJ5vir6J255CkELSeL0A==
+cypress@4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/cypress/-/cypress-4.5.0.tgz#01940d085f6429cec3c87d290daa47bb976a7c7b"
+  integrity sha512-2A4g5FW5d2fHzq8HKUGAMVTnW6P8nlWYQALiCoGN4bqBLvgwhYM/oG9oKc2CS6LnvgHFiKivKzpm9sfk3uU3zQ==
   dependencies:
     "@cypress/listr-verbose-renderer" "0.4.1"
     "@cypress/request" "2.88.5"
